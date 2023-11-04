@@ -12,30 +12,15 @@ function NextPage() {
 
 
   const [jsonData, setJsonData] = useState(JsonObject)
-  
-  const [excelData, setExcelData] = useState({
-    empId:'',
-    firstName: '',
-    lastName: '',
-    email: '',
-    dateOfBirth: '',
-    city: '',
-});
-
-  const header = [
-    'empId',
-    'firstName',
-    'lastName',
-    'email',
-    'dateOfBirth',
-    'city'
-  ];
+  const [header, setHeader] = useState([])
+  const [excelData, setExcelData] = useState({});
 
   useEffect(() => {
     async function fetchData() {
       try {
         const response = await axios.get("/employees");
         setJsonData(response.data);
+        setHeader(Object.keys(jsonData[0]))
 
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -44,7 +29,6 @@ function NextPage() {
     }
     fetchData();
   }, []);
-
 
 
   function handleDownloadExcel() {
@@ -71,7 +55,8 @@ function NextPage() {
       const sheet = workbook.Sheets[sheetName];
       const parseData = XLSX.utils.sheet_to_json(sheet);
       setExcelData(parseData);
-     
+      console.log(parseData)
+
     }
 
   }
@@ -83,8 +68,8 @@ function NextPage() {
     try {
       console.log(excelData);
       // Send a POST request to your server's endpoint
-      const response = await AddData(excelData,isExcel);
-      console.log('Data submitted:', response.data);     
+      const response = await AddData(excelData, isExcel);
+      console.log('Data submitted:', response.data);
     } catch (error) {
       console.error('Error submitting data:', error);
     }
