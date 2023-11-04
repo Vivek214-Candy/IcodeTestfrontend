@@ -1,0 +1,50 @@
+[
+    {
+        "empId": 1,
+        "firstName": "vivek",
+        "lastName": "suman",
+        "email": "viveksuman214@gmail.com",
+        "dateOfBirth": "2023-11-08",
+        "city": "Ranchi"
+    },
+    {
+        "empId": 2,
+        "firstName": "prateek",
+        "lastName": "suman",
+        "email": "prateek19@gmail.com",
+        "dateOfBirth": "2023-11-08",
+        "city": "Ranchi"
+    },
+    {
+        "empId": 3,
+        "firstName": "akshay",
+        "lastName": "kumar",
+        "email": "akshay18@gmail.com",
+        "dateOfBirth": "2023-11-08",
+        "city": "Delhi"
+    },
+    {
+        "empId": 4,
+        "firstName": "ayush",
+        "lastName": "kumar",
+        "email": "ayush1898@gmail.com",
+        "dateOfBirth": "2023-11-01",
+        "city": "Delhi"
+    },
+    {
+        "empId": 5,
+        "firstName": "pratyush",
+        "lastName": "singh",
+        "email": "pratyush98@gmail.com",
+        "dateOfBirth": null,
+        "city": "Delhi"
+    },
+    {
+        "empId": 6,
+        "firstName": "sankalp",
+        "lastName": "awasthi",
+        "email": "sankalp80@gmail.com",
+        "dateOfBirth": null,
+        "city": "Delhi"
+    }
+]

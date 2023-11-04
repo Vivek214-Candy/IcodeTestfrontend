@@ -1,0 +1,60 @@
+*,
+body {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.grid {
+    background-color: #052355;
+    width: 100vw;
+    /* Set the desired width of your grid container */
+    height: auto;
+    /* Set the desired height of your grid container */
+    overflow: auto;
+    /* Add scrollbars when content overflows */
+
+    /* Optional border for styling */
+    display: table-row;
+    grid-template-columns: repeat(3, 1fr);
+    /* Define the number of columns */
+    gap: 10px;
+    /* Define the gap between grid items */
+    padding: 5px;
+    /* Optional padding for spacing */
+
+}
+
+.gridItems {
+   /* background-color: #022968; */
+   border-radius: 10px;
+   padding: 10px;
+   display: flexbox;
+   justify-content: space-between;
+   
+}
+
+.headers {
+    padding: 10px;
+    margin: 10px;
+    color: rgb(42, 129, 216);
+    width: 100vw;
+    /* Optional padding for grid items */
+    text-align: center;
+    border-radius: 3px;
+    justify-content: space-between;
+    background-color: #19325f;
+}
+
+
+tbody {
+    padding: 10px;
+    margin: 10px;
+    color: rgb(241, 237, 233);
+    width: 100wv;
+    /* Optional padding for grid items */
+    text-align: center;
+    border-radius: 3px;
+    /* justify-content: space-between; */
+    background-color: #19325f;
+}

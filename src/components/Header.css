@@ -1,0 +1,72 @@
+/* App.css */
+.App {
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    background-color: #f1d5d5;
+    height: 715px;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+.vision{
+  position:  absolute;
+  top: 30px; /* Adjust the top position as needed */
+  left: 10px; /* Adjust the right position as needed */
+  width: 50px; /* Adjust the width as needed */
+  height: 50px
+}
+
+.icode{
+  position:  static;
+  top: 5px; /* Adjust the top position as needed */
+  width: 100px; /* Adjust the width as needed */
+  height: 50px
+  }
+
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .addForm{
+    align-content: start;
+  }
+  
+
+  
+  .cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: right;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  

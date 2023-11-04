@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+
+import Headers from "./components/Headers"
 import './App.css';
+import {createBrowserRouter, RouterProvider } from 'react-router-dom'
+import NextPage from "./components/NextPage";
 
 function App() {
+
+  const Router = createBrowserRouter([
+   
+   
+    {
+      path: '/',
+      element: <Headers />
+    },
+    {
+      path: '/nextPage',
+      element: <NextPage />
+    },
+
+  
+  ])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterProvider router={Router}>
+        <Headers />
+      </RouterProvider>
+
     </div>
   );
 }
