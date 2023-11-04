@@ -13,14 +13,7 @@ function AddEmpForm() {
     }
   };
 
-    const [formData, setFormData] = useState({
-      firstName: '',
-      lastName: '',
-      email: '',
-      dateOfBirth: '',
-      city: '',
-    
-    });
+    const [formData, setFormData] = useState({});
 
    
 
